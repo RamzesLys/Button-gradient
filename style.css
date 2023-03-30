@@ -1,0 +1,104 @@
+.container {
+  background: grey;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+button {
+  padding: 1em 2em;
+  width: 25em;
+  border-radius: 1em;
+  color: #fff;
+  background-color: purple;
+  transition: all 0.5s;
+  overflow: hidden;
+  margin: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+  /*СПОСІБ 1*/
+.first {
+  background: linear-gradient(90deg, #962b82 0%, green 50%, #c43ace 100%);
+  background-size: 150%;
+}
+
+
+.first:hover {
+  background-position: 60%;  
+}
+
+/* СПОСІБ 2*/
+.first_two {
+  background: radial-gradient(#3f2b96, #9198e5);
+  background-size: 150%;
+  background-position: center;  
+}
+
+.first_two:hover {
+  background-size: 100%;
+}
+
+.second {
+  background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+}
+
+.second:hover {
+  /* filter: hue-rotate(-50deg); */
+  filter: saturate(2);
+}
+
+.third {
+  background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  position: relative;
+  z-index: 1;
+}
+
+
+.third:before {
+  /* background: linear-gradient(90 deg, #3f2b96 0%, red 50%, #a8c0ff 100%); */
+  background: linear-gradient(50deg, #6764d6 0%, #0d7846 100%);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.third:hover::before {
+  opacity: 1;
+}
+
+.my_btn {
+  padding: 1em 2em;
+  width: 25em;
+  border-radius: 1em;
+  color: #fff;
+  /* background-color: #47fe05; */
+  background: linear-gradient(90deg, #47fe05 50%, grey 50%);
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  margin: 1em;
+  font-size: 1.2em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.my_btn-active {
+  background: linear-gradient(90deg, #47fe05 100%, grey 0%);
+  transition: all 1s ease-in-out;
+}
+
+.first {
+  background: linear-gradient(90deg, #962b82 0%, green 50%, #c43ace 100%);
+  background-size: 150%;
+}
+
+
+.first:hover {
+  background-position: 60%;  
+}
