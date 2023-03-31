@@ -2,6 +2,12 @@
   background: grey;
   padding: 30px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
@@ -102,3 +108,11 @@ button {
 .first:hover {
   background-position: 60%;  
 }
+
+.services {
+  padding: 2em 4em;
+  background-color: #0d7846;
+  margin: 2em;
+  width: 20vw;
+  border-radius: 1em;
+} 

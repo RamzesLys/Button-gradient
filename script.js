@@ -9,3 +9,13 @@ myBtn.onmouseout = () => {
   console.log('out');
 }
 
+let links = document.querySelectorAll('.services');
+// links.forEach((elem) => {
+//   elem.setAttribute("href", "https://www.facebook.com/");
+//   console.log(elem);
+// })
+
+links[0].setAttribute("href", "https://www.facebook.com/");
+links[1].setAttribute("href", "https://www.youtube.com/");
+
+console.log(links);
